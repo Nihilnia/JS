@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        //Write numbers between 1- 100 with For Loop
+        console.log("For loop ex:\n\n");
+
+        for (var i = 1; i <= 100; i++){
+            console.log(i)
+        }
+
+
+
+
+        //Write numbers between 10- 100 as five five :D 'best english' with While Loop
+        console.log("\n\nWhile loop ex:\n\n");
+
+        var key = 10;
+        while (key <= 100){
+            if (key % 5 == 0){
+                console.log(key)
+            }
+            key++;
+        }
+
+
+        //Basic login control
+        var userName = "Nihil";
+        var passWord = "Gloria";
+
+        var loginName = prompt("Username: ");
+        var loginPass = prompt("Password: ");
+
+        if (userName != loginName || passWord != loginPass){
+            alert("Wrong username/password...")
+            console.log("Failed login attemp.\nUser: ", loginName);
+        }else{
+            alert("Welcome ", userName)
+            console.log("Succesful login attemp..\nUser: ", loginName);
+        }
+
+    </script>
+</body>
+</html>
