@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    
+        var year = 2019;
+        var models = new Array('Toyota', 'Mazda', 'Mercedes', 'Opel');
+        var years = ['2015', '2012', '2016', '2014'];
+
+        for (var i = 0; i < models.length; i++){
+            console.log(models[i], years[i] + " model ve", year - Number(years[i]) + " yaşında bir araçtır..")
+        }
+
+        console.log("\n item adding..\n")
+
+        var key = 0;
+        while (key < 4){
+            models.push("CarNo" + key);
+            years.push(2012 + key);
+            key++;
+        }
+
+        console.log("\nItems added..\n")
+
+        for (var x = 0; x < models.length; x++){
+            console.log(models[x], years[x] + " model ve", year - Number(years[x]) + " yaşında bir araçtır..")
+        }
+    </script>
+</body>
+</html>
