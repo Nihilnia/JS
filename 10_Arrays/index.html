@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    
+        console.log("Notes for the arrays:\npush('item adding')\nunshift('item adding to first place.')\npop('delete the last item')\nshift('delete the first item')");
+
+        var exArray = ["a", "b", "c", "d"];
+        console.log(exArray);
+
+        var modelz = new Array("a1", "b1", "c1", "d1");
+        console.log(modelz);
+
+        if (modelz.indexOf("e1") !== -1){
+            console.log("e1 - is already there.");
+            console.log(modelz[modelz.indexOf("e1")]);
+        }else{
+            console.log("e1 - is not there. Adding..");
+            modelz.push("e1");
+            console.log("Added..")
+        }
+    
+        modelz.shift();
+
+        for (var i = 0; i < modelz.length; i++){
+            console.log(modelz[i]);
+        }
+
+    </script>
+</body>
+</html>
