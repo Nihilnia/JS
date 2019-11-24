@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        //Girilen bir sayının tek mi çift oldugunu hesaplayan bir fonksiyon yaz.
+        function tekCift(sayi){
+            if (sayi % 2 != 0){
+                return "girilen sayi", sayi, "tektir.";
+            }else{
+                return "girilen sayi", sayi, "çifttir.";
+            }
+        };
+
+
+
+        //Girilen bir sayının faktoriyelini hesaplayan fonksiyon yaz.
+        function faktoriyel(sayi){
+            var sayininFaktoriyeli = 1;
+            
+            for (var x = 1; x <= sayi; x++){
+                sayininFaktoriyeli *= x;
+            };
+
+            return "girilen sayi" + sayi + "'nin faktoriyeli:", sayininFaktoriyeli + "dir."; 
+        };
+
+
+        //Kendisine gönderilen bir dizinin elemanlarını ekrana yazdıran bir fonksiyon yaz.
+        function ornekFunc(dizi){
+            var key = 1;
+            dizi.forEach(function(item){
+                console.log(key, ".Item of array:", item)
+                key++;
+            });
+        };
+    
+    
+        console.log(tekCift(1234124));
+        console.log(tekCift(123423.2342));
+
+        console.log(faktoriyel(10));
+        console.log(faktoriyel(5));
+
+        var ornekDizi = ["nihil", "nia", "gloria", "AI"];
+        ornekDizi.push("helion");
+
+        ornekFunc(ornekDizi);
+
+
+
+    </script>
+</body>
+</html>
