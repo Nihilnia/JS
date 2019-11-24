@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        var song01 = {
+                name: "OK",
+                artist: "8 Graves",
+                duration: 4.22,
+                isAvailable: true
+        };
+
+        var song02 = new Object();
+        song02.name = "Play with Fire";
+        song02.artist = "IDK";
+        song02.duration = 2.32;
+        song02.isAvailable = false;
+    
+        console.log(song01);
+        console.log(song02);
+
+        var songz = [
+            {
+                name: "OK",
+                artist: "8 Graves",
+                duration: 4.22,
+                isAvailable: true
+            },
+            {
+                name: "Play with Fire",
+                artist: "IDK",
+                duration: 2.32,
+                isAvailable: false
+            }
+        ];
+
+        console.log(songz);
+
+        for (var x = 0; x < songz.length; x++){
+            console.log(songz[x]);
+        };
+
+        songz.push("a");
+    </script>
+</body>
+</html>
