@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        function summarizeIt(text = "Gloria", number = 0){
+            //Lorem Ipsum
+            var summarize = text.substring(0, number); //Lorem
+
+            if (summarize.substring(summarize.length - 1, summarize.length) != " "){
+                console.log("There is not a space");
+            }else{
+                return summarize.substring(0, summarize.length - 1) + "..";
+            }
+            
+        };
+
+        var girilenYazi = prompt("Give me a text for summarize:");
+        var girilenSayi = prompt("Give me a number for summarize:");
+
+        console.log(summarizeIt(girilenYazi, girilenSayi));
+
+        //Lorem ipsum dolor sit amet
+    </script>
+</body>
+</html>
